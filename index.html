@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-img">
+    <header class="bg-img" id="inicio">
         <div class="overlay"></div>
         <div class="on-overlay">
             <nav>
@@ -17,10 +17,10 @@
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Servicios</a></li>
-                        <li><a href="">Quienes Somos</a></li>
-                        <li><a href="">Contactos</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#footer">Contactos</a></li>
                     </ul>
                 </div>
             </nav>
@@ -33,8 +33,8 @@
     </header>
 
     <section id="main">
-        <h1>Servicios</h1>
         <article id="servicios">
+            <h1>Servicios</h1>
             <div class="card-container">
                 <div class="card">
                     <div class="header-card">
@@ -55,8 +55,8 @@
             </div>
         </article>
 
-        <h1>Quienes somos</h1>
         <article id="nosotros">
+            <h1>Quienes somos</h1>
             <div class="card-container">
                 <div class="card">
                     <div class="header-card">
@@ -112,7 +112,7 @@
         </article>
     </section>
 
-    <footer>
+    <footer id="footer">
         <a href="https://web.facebook.com/alexander.perez.urbina55/">
             <div class="circle-container">
                 <i class="fab fa-facebook-f"></i>
@@ -130,5 +130,6 @@
         </a>
     </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>

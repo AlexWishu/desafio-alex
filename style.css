@@ -36,16 +36,20 @@ a{
 }
 
 .on-overlay{
+    display: flex;
     position: relative;
     z-index: 2;
+    justify-content: center;
 }
 
 nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 0px 80px;
+    padding: 0px 100%;
     border: 1px solid cyan;
+    position: fixed;
+    top: 0;
 }
 
 .navbar li{
@@ -55,7 +59,7 @@ nav{
 }
 
 .navbar li a{
-    padding: 10px 30px;
+    padding: 10px 50px;
     display: block;
     text-decoration: none;
     color: white;
@@ -68,13 +72,14 @@ nav{
 
 .logo img{
     max-width: 400px;
+    margin-right: 5em;
 }
 
 #home-bienvenida{
     text-align: center;
     color: #ffffff;
     border: 1px solid red;
-    margin-top: 50px;
+    margin-top: 25%;
 }
 
 #home-bienvenida h1{
@@ -95,6 +100,7 @@ nav{
 #servicios,
 #nosotros{
     display: flex;
+    flex-direction: column;
     margin: 0px 80px;
     justify-content: center;
 }
