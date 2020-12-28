@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    background: none;
+    font-family: sans-serif;
+}
+
+header{
+    border: 5px solid green;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg-img {
+    background-image: url("images/background.jpg"); 
+    background-attachment: fixed;
+    background-color: #000000;
+    position: relative;
+    height: 700px;
+    z-index: 1;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.overlay {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    opacity: .8;
+    z-index: 1;
+    background: #1C1D21;
+}
+
+.on-overlay{
+    position: relative;
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 80px;
+    border: 1px solid cyan;
+}
+
+.navbar li{
+    display: block;
+    text-align: center;
+    padding: 0px, 20px;
+}
+
+.navbar li a{
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 400px;
+}
+
+#home-bienvenida{
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid red;
+    margin-top: 50px;
+}
+
+#home-bienvenida h1{
+    font-size: 60px;
+}
+
+#home-bienvenida h3{
+    opacity: .3;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+#main h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+#servicios,
+#nosotros{
+    display: flex;
+    margin: 0px 80px;
+    justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px 10px;
+}
+
+.body-card{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.body-card p{
+    
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+footer{
+    display: flex;
+    background: #1C1D21;
+    height: 200px;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: 0px 10px;
+    transition: ease .2s;
+}
+
+.circle-container:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+.circle-container i{
+    font-size: 23px;
+}
