@@ -119,15 +119,17 @@ nav{
     margin: 10px 10px;
 }
 
+.header-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .body-card{
     display: flex;
     flex-wrap: wrap;
     border: 1px solid red;
     text-align: center;
-}
-
-.body-card p{
-    
 }
 
 .card img{
