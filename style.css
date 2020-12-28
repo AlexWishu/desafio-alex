@@ -8,14 +8,17 @@
 }
 
 header{
-    border: 5px solid green;
+    /* border: 5px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a{
     text-decoration: none;
 }
 
-.bg-img {
+#home {
     background-image: url("images/background.jpg"); 
     background-attachment: fixed;
     background-color: #000000;
@@ -47,7 +50,6 @@ nav{
     align-items: center;
     margin: 0px 80px;
     padding: 0px 100%;
-    border: 1px solid cyan;
     position: fixed;
     top: 0;
 }
@@ -55,7 +57,7 @@ nav{
 .navbar li{
     display: block;
     text-align: center;
-    padding: 0px, 20px;
+    margin: 0px 10px;
 }
 
 .navbar li a{
@@ -72,14 +74,13 @@ nav{
 
 .logo img{
     max-width: 400px;
-    margin-right: 5em;
+    margin-right: 8em;
 }
 
 #home-bienvenida{
     text-align: center;
     color: #ffffff;
-    border: 1px solid red;
-    margin-top: 25%;
+    /* border: 1px solid red; */
 }
 
 #home-bienvenida h1{
@@ -105,6 +106,10 @@ nav{
     justify-content: center;
 }
 
+#nosotros{
+    margin-top: 120px;
+}
+
 .card-container{
     display: flex;
     align-items: center;
@@ -115,14 +120,21 @@ nav{
 .card{
     display: flex;
     flex-direction: column;
+    background: #cfcfcf;
     align-items: center;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 3px;
     width: 300px;
     height: 400px;
     overflow: hidden;
     margin: 10px 10px;
+    transition: ease .2s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 7px rgba(0,0,0,.3)
 }
 
 .header-card{
@@ -134,8 +146,24 @@ nav{
 .body-card{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
+    width: 80%;
+    height: 45%;
+    background: #ffffff;
+    margin-top: 20px;
     text-align: center;
+    font-size: 18px;
+    flex-direction: column;
+}
+
+.body-card h3{
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.body-card p{
+    margin-top: 10px;
+    /* border: 1px solid red; */
 }
 
 .card img{
@@ -143,13 +171,36 @@ nav{
     height: 150px;
     margin-top: 20px;
     object-fit: cover;
+    border: 5px solid rgba(0,0,0,.5);
+}
+
+#contacto{
+    /* border: 3px solid blue; */
+    margin-top: 120px;
+}
+
+#body-contacto{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contacto i{
+    font-size: 60px;
+}
+
+#contacto p{
+    margin-top: 10px;
 }
 
 footer{
     display: flex;
     background: #1C1D21;
     height: 200px;
-    border: 1px solid red;
+    margin-top: 100px;
+    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
 }
