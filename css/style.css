@@ -2,41 +2,14 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    list-style: none;
     border: none;
     background: none;
     font-family: sans-serif;
     text-decoration: none;
 }
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    left: 0;
-    top: 0;
-    z-index: 10;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-  
-  /* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
 
-  /* Add Animation */
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-  
 header{
     /* border: 5px solid green; */
     display: flex;
@@ -55,6 +28,11 @@ a{
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+}
+
+.line{
+    display: block;
+    border: 1px solid rgba(0,0,0,.3);
 }
 
 #home {
@@ -141,7 +119,7 @@ nav{
     margin-top: 10px;
 }
 
-#main h1{
+.title{
     text-align: center;
     font-size: 40px;
     margin-bottom: 50px;
@@ -153,7 +131,7 @@ nav{
     flex-direction: column;
     margin: 0px 80px;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 .card-container{
@@ -198,7 +176,7 @@ nav{
     top: 0;
 }
 
-.card img{
+.header-card img{
     width: 150px;
     height: 150px;
     margin-top: 20px;
@@ -302,11 +280,11 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #ffffff;
-    margin: 0px 10px;
+    margin: 0px 15px;
     transition: ease .2s;
 }
 
@@ -320,4 +298,111 @@ footer{
 
 .icon-container i{
     font-size: 23px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    display: flex;
+    background-color: #fefefe;
+    margin: 30px auto; /* 15% from the top and centered */
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 1px solid #888;
+    flex-direction: column;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 90%;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.header-modal{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header-modal img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    z-index: 10;
+}
+.header-modal .background-header-card{
+    width: 100%;
+}
+
+.title-modal{
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.title-modal .line{
+    margin-top: 8px;
+}
+
+.body-modal{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin: 15px 30px 0px 30px;
+    height: 100%;
+}
+
+.info-modal li{
+    text-align: start;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.redes-sociales-modal{
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    /* border: 1px solid red; */
+}
+
+.title-redes-sociales-modal{
+    margin-bottom: 10px;
+}
+
+.links-modal{
+    display: flex;
+    justify-content: center;
+}
+
+.links-modal i{
+    color: #ffffff;
+}
+
+.facebook-color{
+    background: linear-gradient(50deg,rgb(0, 0, 255), rgb(80,80,255));
+}
+
+.instagram-color{
+    background: linear-gradient(50deg,#ffdf9e,#ffc273,#e56969,#c1558b,#8a49a1);
+}
+
+.linkedin-color{
+    background: rgb(93, 93, 255);
 }
