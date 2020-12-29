@@ -52,7 +52,7 @@ a{
     background-image: linear-gradient(45deg, rgba(195, 80, 201, .9),rgba(0, 255, 255, .9));
     background-size: 100%;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
 }
