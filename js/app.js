@@ -38,23 +38,28 @@ let modal = document.getElementsByClassName("modal");
 // Obtiene el boton cerrar //
 let btnCloseModal = document.getElementsByClassName("btn-close-modal")[0];
 
+let body = document.getElementsByTagName("body")[0];
+
 for(let i = 0; i < btnModal.length; i++){
     btnModal[i].setAttribute("id", "btn-modal-" + i);
     modal[i].setAttribute("id", "modal-" + i);
     
     btnModal[i].onclick = function() {
         modal[i].style.display = "block";
+        body.setAttribute("style", "overflow: hidden")
     }
 
     document.addEventListener("click", e => {
 
         if (e.target == document.getElementById("modal-"+ i)) {
-            wait(100);
+            wait(50);
             modal[i].style.display = "none";
+            body.setAttribute("style", "overflow: visible")
         }
         else if (e.target == btnCloseModal) {
-            wait(100);
+            wait(50);
             modal[i].style.display = "none";
+            body.setAttribute("style", "overflow: visible")
         }
         
     })

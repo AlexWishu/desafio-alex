@@ -345,7 +345,11 @@ footer{
     position: relative;
 }
 
-.header-modal button{
+.activate-modal{
+    border: 0;
+}
+
+.btn-close-modal{
     position: absolute;
     right:0;
     border-radius: 0px;
@@ -359,7 +363,7 @@ footer{
     align-items: center;
 }
 
-.header-modal button:hover{
+.btn-close-modal:hover{
     transform: none;
     box-shadow: none;
 }
