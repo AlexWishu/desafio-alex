@@ -22,11 +22,21 @@ for(let i = 0; i < iconContainer.length; i++){
     })
 }
 
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+    }
+}
+
 
 // Obtiene a todos los botones con la clase "activate-modal" //
-var btnModal = document.getElementsByClassName("activate-modal");
+let btnModal = document.getElementsByClassName("activate-modal");
 // Obtiene a todos los modals //
-var modal = document.getElementsByClassName("modal");
+let modal = document.getElementsByClassName("modal");
+// Obtiene el boton cerrar //
+let btnCloseModal = document.getElementsByClassName("btn-close-modal")[0];
 
 for(let i = 0; i < btnModal.length; i++){
     btnModal[i].setAttribute("id", "btn-modal-" + i);
@@ -37,8 +47,15 @@ for(let i = 0; i < btnModal.length; i++){
     }
 
     document.addEventListener("click", e => {
+
         if (e.target == document.getElementById("modal-"+ i)) {
+            wait(100);
             modal[i].style.display = "none";
         }
+        else if (e.target == btnCloseModal) {
+            wait(100);
+            modal[i].style.display = "none";
+        }
+        
     })
 }

@@ -239,6 +239,9 @@ nav{
 #contacto{
     /* border: 3px solid blue; */
     padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .title-contacto{
@@ -250,6 +253,7 @@ nav{
     text-align: center;
     margin-top: 30px;
     margin: 0px 240px;
+    padding: 0px 30px;
     justify-content: space-around;
     align-items: center;
 }
@@ -306,6 +310,7 @@ footer{
     left: 0;
     top: 0;
     z-index: 10;
+    border: none;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background-color: rgb(0,0,0); /* Fallback color */
@@ -338,6 +343,25 @@ footer{
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.header-modal button{
+    position: absolute;
+    right:0;
+    border-radius: 0px;
+    border: none;
+    background: linear-gradient(rgb(185, 0, 0), rgb(255,0,0));
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-modal button:hover{
+    transform: none;
+    box-shadow: none;
 }
 
 .header-modal img{
