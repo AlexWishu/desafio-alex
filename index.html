@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Inicio</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/waves.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header id="home">
@@ -44,7 +45,7 @@
                         <p>Este servicio te cambiara la vida pa siempre oe zi.</p>
                     </div>
                     <div class="footer-card">
-                        <button>Ver mas</button>
+                        <button class="button">Ver mas</button>
                     </div>
                 </div>
                 <div class="card">
@@ -55,7 +56,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, incidunt error animi quis eveniet dolorum. Nobis distinctio sapiente quia aliquam accusamus ad ipsum magni id unde, pariatur, consequatur e</p>
                     </div>
                     <div class="footer-card">
-                        <button>Ver mas</button>
+                        <button class="button">Ver mas</button>
                     </div>
                 </div>
             </div>
@@ -73,7 +74,7 @@
                         <p>Este es alexander un joven mu weno, el estudio en la escuela jose de san martin y era seco en matematicas</p>
                     </div>
                     <div class="footer-card">
-                        <button>Ver mas</button>
+                        <button class="button">Ver mas</button>
                     </div>
                 </div>
 
@@ -86,7 +87,7 @@
                         <p>Ella es ignacia una bella princesa</p>
                     </div>
                     <div class="footer-card">
-                        <button>Ver mas</button>
+                        <button class="button">Ver mas</button>
                     </div>
                 </div>
             </div>
@@ -128,6 +129,11 @@
         </a>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="js/waves.min.js"></script>
+    <script type="text/javascript">
+        Waves.init();
+        Waves.attach('.button', ['waves-button', 'waves-float']);
+    </script>         
+    <script src="js/app.js"></script>
 </body>
 </html>
