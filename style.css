@@ -5,6 +5,7 @@
     border: none;
     background: none;
     font-family: sans-serif;
+    text-decoration: none;
 }
 
 header{
@@ -23,7 +24,7 @@ a{
     background-attachment: fixed;
     background-color: #000000;
     position: relative;
-    height: 700px;
+    height: 690px;
     z-index: 1;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -50,6 +51,7 @@ nav{
     align-items: center;
     margin: 0px 80px;
     padding: 0px 100%;
+    background: rgba(0,0,0,.5);
     position: fixed;
     top: 0;
 }
@@ -63,8 +65,15 @@ nav{
 .navbar li a{
     padding: 10px 50px;
     display: block;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
+    transition: all ease .3s;
+}
+
+.navbar li a:hover{
+    color: #d1d1d1;
 }
 
 .navbar ul{
@@ -73,7 +82,7 @@ nav{
 }
 
 .logo img{
-    max-width: 400px;
+    max-width: 300px;
     margin-right: 8em;
 }
 
@@ -88,14 +97,14 @@ nav{
 }
 
 #home-bienvenida h3{
-    opacity: .3;
+    opacity: .8;
     font-weight: normal;
     margin-top: 10px;
 }
 
 #main h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 #servicios,
@@ -104,10 +113,7 @@ nav{
     flex-direction: column;
     margin: 0px 80px;
     justify-content: center;
-}
-
-#nosotros{
-    margin-top: 120px;
+    padding-top: 120px;
 }
 
 .card-container{
@@ -120,11 +126,11 @@ nav{
 .card{
     display: flex;
     flex-direction: column;
-    background: #cfcfcf;
+    background: #f3f3f3;
     align-items: center;
     text-align: center;
     /* border: 2px solid black; */
-    border-radius: 3px;
+    border-radius: 5px;
     width: 300px;
     height: 400px;
     overflow: hidden;
@@ -133,9 +139,9 @@ nav{
 }
 
 .card:hover{
-    margin-top: 5px;
-    box-shadow: 0px 8px 7px rgba(0,0,0,.3)
+    box-shadow: 0px 8px 7px rgba(0,0,0,.3);
 }
+
 
 .header-card{
     display: flex;
@@ -147,26 +153,25 @@ nav{
     width: 150px;
     height: 150px;
     margin-top: 20px;
+    border-radius: 50%;
     object-fit: cover;
-    border: 5px solid rgba(0,0,0,.5);
+    /* border: 5px solid rgba(0,0,0,.5); */
 }
 
 .body-card{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height: 45%;
-    background: #ffffff;
     margin-top: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .body-card h3{
     /* border: 1px solid blue; */
     width: 100%;
-    margin-top: 10px;
 }
 
 .body-card p{
@@ -174,39 +179,70 @@ nav{
     /* border: 1px solid red; */
 }
 
+.footer-card{
+    /* border: 1px solid red; */
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.footer-card button{
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    background: rgb(255, 164, 45);
+    transition: all ease .3s;
+}
+
+.footer-card button:hover{
+    background: rgb(200, 130, 38);
+    box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+    cursor: pointer;
+}
 
 #contacto{
     /* border: 3px solid blue; */
-    margin-top: 120px;
+    padding-top: 90px;
+}
+
+.title-contacto{
+    margin-bottom: 60px;
 }
 
 #body-contacto{
     display: flex;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin: 0px 240px;
     justify-content: space-around;
     align-items: center;
 }
 
 #contacto i{
-    font-size: 60px;
+    font-size: 30px;
 }
 
 #contacto p{
-    margin-top: 10px;
+    margin-top: 8px;
+}
+
+#contacto h2{
+    font-size: 25px;
 }
 
 footer{
     display: flex;
     background: #1C1D21;
-    height: 200px;
+    height: 180px;
     margin-top: 100px;
     /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
 }
 
-.circle-container{
+.icon-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,11 +254,14 @@ footer{
     transition: ease .2s;
 }
 
-.circle-container:hover{
-    background: #000000;
+.font-white::before{
     color: #ffffff;
 }
 
-.circle-container i{
+.icon-container:hover{
+    background: #000000;
+}
+
+.icon-container i{
     font-size: 23px;
 }
